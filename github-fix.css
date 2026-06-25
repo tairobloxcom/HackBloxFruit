@@ -1,0 +1,47 @@
+/* GitHub Pages fixes for TaiRoblox single article */
+html { margin-top: 0 !important; scroll-behavior: smooth; }
+body { margin: 0 !important; padding-top: 0 !important; background: #fff; }
+#wpadminbar, .block-edit-link, .edit-block-button, .mfp-hide.edit-block, .xdebug-var-dump { display: none !important; }
+.admin-bar .header-wrapper, .logged-in .header-wrapper { top: 0 !important; }
+.header-wrapper, .header, .stuck, .sticky-jump .stuck { top: 0 !important; }
+.mfp-content, button.mfp-close { top: 0 !important; }
+.is-full-height { height: 100vh !important; }
+#main { min-height: 60vh; }
+.containner-detail { max-width: 842px; margin-left: auto; margin-right: auto; }
+.post-header { padding: 18px 0 10px; }
+.post-title, .post-title a { color: #222; }
+.post-info-table { overflow: hidden; }
+.post-info-table img[src*="start.svg"] { width: 14px; height: 14px; display: inline-block; vertical-align: -2px; }
+.rating { display: inline-flex; align-items: center; gap: 2px; color: #ffa500; min-height: 16px; }
+.rating .github-star { width: 13px; height: 13px; display:inline-block; line-height:13px; color:#ffb000; font-size:13px; }
+.github-download-note { margin: 10px 0 0; font-size: 13px; color: #666; text-align: center; }
+.modradar-download-button { border: 1px solid var(--primary-color, #335fff); }
+.modradar-download-button.is-loading { opacity: .75; cursor: wait; }
+.post-content img { max-width: 100%; height: auto; border-radius: 10px; }
+.post-content figure { max-width: 100% !important; }
+.wp-caption-text { font-size: 13px; color: #666; text-align: center; margin-top: 6px; }
+.author-card { box-sizing: border-box; }
+.header-main .nav > li > a { color: #222; }
+.header-bg-color { background-color: #335fff !important; }
+.off-canvas-left .mfp-content, .off-canvas-right .mfp-content { top: 0 !important; }
+.mobile-sidebar { background: #fff; }
+.nav-dropdown { z-index: 999; }
+.footer, .absolute-footer { text-align: center; }
+img { max-width: 100%; height: auto; }
+@media (max-width: 849px) {
+  html { margin-top: 0 !important; }
+  .header-main { min-height: 70px; }
+  .post-header { gap: 10px; }
+  .post-thumbnail { width: 96px; height: 96px; margin: 0 auto 12px; }
+  .post-title { font-size: 20px; text-align: center; }
+  .post-info-table td, .post-info-table th { padding: 10px 8px; font-size: 14px; }
+  .modradar-download-button { border-radius: 12px; }
+  .author-card { padding: 20px 14px; }
+  .author-description { padding: 16px 22px; }
+}
+@media (max-width: 480px) {
+  .containner-detail { padding-left: 12px; padding-right: 12px; }
+  .post-header { flex-direction: column; }
+  .post-thumbnail { width: 110px; }
+  .post-info-table .label { width: 42%; }
+}
